@@ -2,18 +2,18 @@
 
 namespace Coon.Scalar
 {
-    public sealed class ScalarOf<T> : IScalar<T>
+    public sealed class ScalarOf<TValue> : IScalar<TValue>
     {
-        private readonly Func<T> _func;
+        private readonly Func<TValue> _function;
 
-        public ScalarOf(Func<T> func)
+        public ScalarOf(Func<TValue> function)
         {
-            _func = func;
+            _function = function;
         }
 
-        public T GetValue()
+        public TValue GetValue()
         {
-            return _func.Invoke();
+            return _function.Invoke();
         }
     }
 }

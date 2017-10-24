@@ -1,7 +1,7 @@
 ﻿namespace Coon
 {
-    public interface IScalar<out T>
+    public interface IScalar<out TValue>
     {
-        T GetValue();
+        TValue GetValue();
     }
 }

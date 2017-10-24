@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Coon.Func;
+using System;
 using System.IO;
-using Coon.Func;
 using Xunit;
 
 namespace Coon.UnitTests.Func

@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Coon.Scalar;
+using System;
 using System.IO;
-using Coon.Func;
-using Coon.Scalar;
 using Xunit;
 
 namespace Coon.UnitTests.Scalar

@@ -9,8 +9,9 @@ namespace Coon.Iterable
         private readonly IScalar<IEnumerator<T>> _source;
 
         public IterableOf(params T[] source)
-            : this(new ScalarOf<IEnumerator<T>>(() =>
-                    new List<T>(source).GetEnumerator()))
+            : this(new ScalarOf<IEnumerator<T>>(
+                () => new List<T>(source).GetEnumerator())
+            )
         { }
 
         private IterableOf(IScalar<IEnumerator<T>> source)
