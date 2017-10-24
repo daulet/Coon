@@ -1,17 +1,25 @@
-﻿namespace Coon.Text
+﻿using Coon.Scalar;
+
+namespace Coon.Text
 {
     public sealed class TextOf : IText
     {
-        private readonly string _input;
+        private readonly IScalar<string> _origin;
 
         public TextOf(string input)
+            : this(new ScalarOf<string>(
+                () => input)
+            )
+        { }
+
+        private TextOf(IScalar<string> origin)
         {
-            _input = input;
+            _origin = origin;
         }
         
         public string AsString()
         {
-            throw new System.NotImplementedException();
+            return new IoCheckedScalar<string>(_origin).GetValue();
         }
 
         public int CompareTo(IText text)

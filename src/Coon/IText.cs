@@ -1,12 +1,12 @@
-﻿namespace Coon
+﻿using System;
+
+namespace Coon
 {
     /// <summary>
     /// Text interface
     /// </summary>
-    public interface IText
+    public interface IText : IComparable<IText>
     {
         string AsString();
-
-        int CompareTo(IText text);
     }
 }

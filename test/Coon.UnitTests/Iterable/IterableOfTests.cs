@@ -1,6 +1,6 @@
-﻿using System;
-using Coon.Iterable;
+﻿using Coon.Iterable;
 using Moq;
+using System;
 using Xunit;
 
 namespace Coon.UnitTests.Iterable
