@@ -13,7 +13,7 @@ namespace Coon.Scalar
 
         public TValue GetValue()
         {
-            return _function.Invoke();
+            return _function();
         }
     }
 }
