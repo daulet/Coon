@@ -1,6 +1,6 @@
 ﻿namespace Coon.Text
 {
-    public class TextOf : IText
+    public sealed class TextOf : IText
     {
         private readonly string _input;
 

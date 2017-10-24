@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Coon.Iterable
 {
-    public class IterableOf<T> : IEnumerable<T>
+    public sealed class IterableOf<T> : IEnumerable<T>
     {
         private readonly IScalar<IEnumerator<T>> _source;
 

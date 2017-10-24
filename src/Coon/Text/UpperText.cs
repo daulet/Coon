@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Coon.Text
 {
-    public class UpperText : IText
+    public sealed class UpperText : IText
     {
         private readonly IText _text;
 

@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 
 namespace Coon.Branch
 {
-    public class BranchOf : IBranch
+    public sealed class BranchOf : IBranch
     {
         private readonly string _filePath;
 

@@ -2,7 +2,7 @@
 
 namespace Coon.IO
 {
-    public class InputOf : IInput
+    public sealed class InputOf : IInput
     {
         private readonly FileInfo _fileInfo;
 

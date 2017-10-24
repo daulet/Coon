@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Coon.Iterable;
+using System.Collections.Generic;
 using System.Linq;
-using Coon.Iterable;
 
 namespace Coon.Scalar
 {
