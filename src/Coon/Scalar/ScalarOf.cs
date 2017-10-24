@@ -2,7 +2,7 @@
 
 namespace Coon.Scalar
 {
-    public class ScalarOf<T> : IScalar<T>
+    public sealed class ScalarOf<T> : IScalar<T>
     {
         private readonly Func<T> _func;
 
