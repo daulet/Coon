@@ -1,9 +1,9 @@
-﻿using Coon.Iterable;
+﻿using System;
+using Coon.Iterable;
 using Moq;
-using System;
 using Xunit;
 
-namespace Coon.UnitTests.Scalar
+namespace Coon.UnitTests.Iterable
 {
     public class IterableOfTests
     {
